@@ -42,6 +42,13 @@
 			<artifactId>spring-webmvc</artifactId>
 			<!-- <version>${spring-framework.version}</version> -->
 		</dependency>
+		
+		<!-- 其他web依赖 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<!-- <version>${jstl.version}</version> -->
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -60,7 +67,7 @@
 			<!-- <version>${spring-framework.version}</version> -->
 		</dependency>
 
-		<!-- slf4j and logback 日志 -->
+		<!-- slf4j 和 logback 日志 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -103,6 +110,7 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+	   
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -119,6 +127,14 @@
 				<configuration>
 					<source>8.0</source>
 					<target>8.0</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 			<plugin>
