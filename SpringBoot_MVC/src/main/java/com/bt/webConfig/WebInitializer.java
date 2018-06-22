@@ -8,6 +8,9 @@ import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+/*
+ *用不到 
+ */
 // WebInitializer 是spring提供用来配置servlet3.0+配置的接口,从而实现web.xml的位置,实现此接口将会自动被SpringServletContainerInitializer(用来启动servlet3.0容器)获取到
 public class WebInitializer implements WebApplicationInitializer {
 

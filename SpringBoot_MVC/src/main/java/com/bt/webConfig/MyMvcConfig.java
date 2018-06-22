@@ -7,6 +7,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+/*
+ *用不到 
+ */
 @Configuration
 @EnableWebMvc // 启用webmvc相关配置 如:viewResolver MessagerConverter
 @ComponentScan("com.bt.webConfig")
